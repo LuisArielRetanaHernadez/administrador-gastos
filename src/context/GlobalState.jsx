@@ -15,12 +15,19 @@ const initalState = {
 const GlobalProvider = ({children}) => {
   const [state, dispatch] = useReducer(AppReducer, initalState)
   
+  const addTransaction = (action) => {
+    dispatch({
+      type: "ADD_TRANSACTION",
+      payload: action
+    })
+  }
+
   return (
     <Context.Provider value={{ 
       transactions: state.transactions,
-      dispatch
+      addTransaction,
      }}>
-      {children}
+      { children }
     </Context.Provider>
   )
 }
