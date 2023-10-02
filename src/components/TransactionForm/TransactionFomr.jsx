@@ -2,6 +2,8 @@ import { useState } from "react"
 
 import { useGlobalState } from "../../context/GlobalState"
 
+import { v4 as uuidv4 } from "uuid"
+
 const TransactionForm = () => {
   const [description, setDescription] = useState('')
   const [amount, setAmount] = useState(0)
@@ -12,6 +14,7 @@ const TransactionForm = () => {
     e.preventDefault()
 
     addTransaction({
+      id: uuidv4(),
       description,
       amount
     })
