@@ -8,7 +8,7 @@ const TransactionForm = () => {
   const [description, setDescription] = useState('')
   const [amount, setAmount] = useState(0)
 
-  const {addTransaction} = useGlobalState()
+  const { addTransaction } = useGlobalState()
 
   const onSubmit = e => {
     e.preventDefault()
