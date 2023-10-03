@@ -10,12 +10,20 @@ function App() {
   return (
     <>
     <GlobalProvider>
-      <Header />
-      <IncomeExpenses />
-      <Balance />
-      <TransactionForm />
-      <TransactionList />
-      <h1>Hello Word</h1>
+      <div className="bg-zinc-950 text-white h-screen w-screen flex 
+      justify-center items-center ">
+        <div className="bg-zinc-800 p-10 rounded-lg flex">
+        
+        <div>
+          <Header />
+          <IncomeExpenses />
+          <Balance />
+          <TransactionForm />
+        </div>
+          
+          <TransactionList />
+        </div>
+      </div>
     </GlobalProvider>
     </>
   )
