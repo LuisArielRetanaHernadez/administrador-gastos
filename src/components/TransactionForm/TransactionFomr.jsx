@@ -16,7 +16,7 @@ const TransactionForm = () => {
     addTransaction({
       id: uuidv4(),
       description,
-      amount
+      amount: +amount
     })
   }
   return (
