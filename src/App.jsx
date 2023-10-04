@@ -12,17 +12,25 @@ function App() {
     <GlobalProvider>
       <div className="bg-zinc-950 text-white h-screen w-screen flex 
       justify-center items-center ">
-        <div className="bg-zinc-800 p-10 rounded-lg flex">
-        
-        <div>
-          <Header />
-          <IncomeExpenses />
-          <Balance />
-          <TransactionForm />
-        </div>
+
+      <div className='container mx-auto w-2/5'>
+
+        <div className="bg-zinc-800 p-10 rounded-lg flex gap-x-2">
           
-          <TransactionList />
+          <div>
+            <Header />
+            <IncomeExpenses />
+            <Balance />
+            <TransactionForm />
+          </div>
+
+          <div>
+            <TransactionList />
+          </div>
+          
         </div>
+      </div>
+   
       </div>
     </GlobalProvider>
     </>
