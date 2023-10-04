@@ -7,9 +7,12 @@ const Balance = () => {
   const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2)
 
   return (
-    <div>
+    <div className="flex justify-between">
       <h3>Balance</h3>
-      {total}
+      <h2 className="text-2x1 font-bold">
+        {total}
+      </h2>
+      
     </div>
   )
 }
