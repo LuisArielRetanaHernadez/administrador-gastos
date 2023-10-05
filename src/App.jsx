@@ -1,5 +1,6 @@
 import './App.css'
 import Balance from './components/Balance/Balance'
+import ExpensesChat from './components/ExpenseChat/ExpenseChat'
 import Header from './components/Header/Header'
 import IncomeExpenses from './components/IncomeExpenses/IncomeExpenses'
 import TransactionForm from './components/TransactionForm/TransactionFomr'
@@ -24,8 +25,9 @@ function App() {
             <TransactionForm />
           </div>
 
-          <div>
+          <div className='flex flex-col flex-1'>
             <TransactionList />
+            <ExpensesChat />
           </div>
           
         </div>

@@ -9,7 +9,9 @@ export const useGlobalState = () => {
   return context
 }
 const initalState = {
-  transactions: []
+  transactions: [],
+  income: 0,
+  expense: 0
 }
 
 const GlobalProvider = ({children}) => {
