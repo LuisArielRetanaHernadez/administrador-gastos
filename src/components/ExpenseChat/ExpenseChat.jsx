@@ -15,8 +15,8 @@ const ExpensesChat = () => {
   return (
     <VictoryPie
       data={[
-        { x: "Expenses", y: totalExpensesPercentage  },
-        { x: "Income", y: totalIncomePercentage }
+        { x: "Expenses", y: totalExpensesPercentage || 1 },
+        { x: "Income", y: totalIncomePercentage || 1 }
       ]}
       animate={{ duration: 1000 }}
       labels={({ datum }) => datum.y}
